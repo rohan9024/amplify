@@ -31,7 +31,7 @@ export default function Home() {
     return (
         <div className=' '>
 
-            <Second />
+            <First />
       
         </div >
     )

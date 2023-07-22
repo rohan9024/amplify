@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { Pie } from 'react-chartjs-2';
 import { Chart, ArcElement } from 'chart.js'
@@ -11,7 +13,7 @@ const Metrics = () => {
         datasets: [
             {
                 data: [300, 50, 100],
-                backgroundColor: ['#ea0537', '#36A2EB', '#FFCE56'],
+                backgroundColor: ['#35cb55', '#e0f23e', '#ea0537'],
                 hoverBackgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
             },
         ],
@@ -52,7 +54,7 @@ const Metrics = () => {
                 </div>
             </div>
             <div className='w-1/2'>
-            <Pie data={data} options={options}  />
+                <Pie data={data} options={options} />
             </div>
 
         </div>

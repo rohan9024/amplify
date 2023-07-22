@@ -25,15 +25,15 @@ function Tweet({ username, name, desc, }) {
         <div className={`${raleway.className} w-auto flex flex-col justify-center items-center px-20 py-20 rounded-lg bg-gray-100 border-gray-400 shadow-2xl `}>
             <div className='flex justify-start items-center space-x-4'>
                 <Image
-                    src='/sonny.png'
+                    src='/sonny.jpeg'
                     alt="Profile picture"
                     width={100}
                     height={100}
-                    className='w-20 h-20 object-contain '
+                    className='w-20 h-20 object-contain rounded-full'
                 />
-                <div className='flex justify-around items-center flex-col space-y-2'>
+                <div className='flex flex-col space-y-2'>
                     <h1 className='font-bold text-xl '>{name}</h1>
-                    <h1 className='font-normal text-lg '>{username}</h1>
+                    <h1 className='font-normal text-lg text-left'>{username}</h1>
                 </div>
 
             </div>
